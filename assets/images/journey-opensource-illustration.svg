@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <title>Ilustrasi eksperimen teknis dan open source</title>
+  <desc>Editor kode, terminal, dan visualisasi modul perangkat lunak.</desc>
+  <defs>
+    <linearGradient id="opensource-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#17172d"/>
+      <stop offset=".55" stop-color="#252548"/>
+      <stop offset="1" stop-color="#20334a"/>
+    </linearGradient>
+    <linearGradient id="opensource-accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#c59cff"/>
+      <stop offset="1" stop-color="#6daaff"/>
+    </linearGradient>
+    <pattern id="opensource-grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M56 0H0V56" fill="none" stroke="#e2d9ff" stroke-opacity=".05"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#opensource-bg)"/>
+  <rect width="1600" height="900" fill="url(#opensource-grid)"/>
+  <circle cx="1320" cy="170" r="280" fill="#a981ff" opacity=".1"/>
+  <circle cx="190" cy="760" r="260" fill="#58b9ec" opacity=".09"/>
+  <g transform="translate(0 67.5) scale(1 .85)">
+  <rect x="190" y="120" width="1220" height="660" rx="30" fill="#101524" stroke="#e6e1ff" stroke-opacity=".18" stroke-width="2"/>
+  <path d="M190 186h1220" stroke="#e6e1ff" stroke-opacity=".12" stroke-width="2"/>
+  <circle cx="230" cy="153" r="8" fill="#ff7c84"/>
+  <circle cx="260" cy="153" r="8" fill="#ffc76c"/>
+  <circle cx="290" cy="153" r="8" fill="#75d9b7"/>
+  <text x="340" y="160" fill="#a8aec5" font-family="Arial,sans-serif" font-size="18" letter-spacing="3">PERSONAL LAB / API STARTER</text>
+  <rect x="224" y="218" width="812" height="422" rx="18" fill="#151d2d" stroke="#d9e2ff" stroke-opacity=".12"/>
+  <rect x="224" y="218" width="812" height="48" rx="18" fill="#1b2537"/>
+  <path d="M224 248v18h812v-18" fill="#1b2537"/>
+  <circle cx="254" cy="242" r="7" fill="#b895ff"/>
+  <text x="278" y="248" fill="#c7cde0" font-family="Arial,sans-serif" font-size="16">auth.middleware.ts</text>
+  <text x="254" y="306" fill="#7888a5" font-family="monospace" font-size="18">01</text>
+  <text x="298" y="306" fill="#d899ff" font-family="monospace" font-size="18">export async function</text>
+  <text x="568" y="306" fill="#8ec8ff" font-family="monospace" font-size="18">authenticate</text>
+  <text x="698" y="306" fill="#dce4f6" font-family="monospace" font-size="18">(request) {</text>
+  <text x="254" y="346" fill="#7888a5" font-family="monospace" font-size="18">02</text>
+  <text x="326" y="346" fill="#aebad1" font-family="monospace" font-size="18">const token = request.headers.authorization;</text>
+  <text x="254" y="386" fill="#7888a5" font-family="monospace" font-size="18">03</text>
+  <text x="326" y="386" fill="#d899ff" font-family="monospace" font-size="18">if</text>
+  <text x="350" y="386" fill="#dce4f6" font-family="monospace" font-size="18">(!token) {</text>
+  <text x="254" y="426" fill="#7888a5" font-family="monospace" font-size="18">04</text>
+  <text x="354" y="426" fill="#aebad1" font-family="monospace" font-size="18">throw new UnauthorizedError();</text>
+  <text x="254" y="466" fill="#7888a5" font-family="monospace" font-size="18">05</text>
+  <text x="326" y="466" fill="#dce4f6" font-family="monospace" font-size="18">}</text>
+  <text x="254" y="506" fill="#7888a5" font-family="monospace" font-size="18">06</text>
+  <text x="326" y="506" fill="#d899ff" font-family="monospace" font-size="18">return</text>
+  <text x="394" y="506" fill="#aebad1" font-family="monospace" font-size="18">verifyToken(token);</text>
+  <text x="254" y="546" fill="#7888a5" font-family="monospace" font-size="18">07</text>
+  <text x="298" y="546" fill="#dce4f6" font-family="monospace" font-size="18">}</text>
+  <rect x="224" y="660" width="812" height="82" rx="16" fill="#0b111c" stroke="#d9e2ff" stroke-opacity=".1"/>
+  <text x="252" y="694" fill="#7f91ae" font-family="monospace" font-size="16">terminal</text>
+  <text x="252" y="724" fill="#83d8c0" font-family="monospace" font-size="17">$ docker compose up --build</text>
+  <rect x="1066" y="218" width="308" height="524" rx="18" fill="#151d2d" stroke="#d9e2ff" stroke-opacity=".12"/>
+  <text x="1094" y="258" fill="#e6e1ff" font-family="Arial,sans-serif" font-size="19" font-weight="700">SYSTEM MODULES</text>
+  <path d="M1180 354v44m80-44v44m-80 62v44m80-44v44" stroke="#7d83bb" stroke-opacity=".8" stroke-width="3" stroke-dasharray="7 8"/>
+  <rect x="1094" y="292" width="110" height="62" rx="13" fill="#312e50" stroke="#b794ff" stroke-opacity=".65"/>
+  <text x="1149" y="329" fill="#e7ddff" font-family="Arial,sans-serif" font-size="15" text-anchor="middle">API</text>
+  <rect x="1228" y="292" width="110" height="62" rx="13" fill="#243c50" stroke="#73c9ef" stroke-opacity=".65"/>
+  <text x="1283" y="329" fill="#d6f1ff" font-family="Arial,sans-serif" font-size="15" text-anchor="middle">AUTH</text>
+  <rect x="1094" y="398" width="110" height="62" rx="13" fill="#283a49" stroke="#6bd7c3" stroke-opacity=".65"/>
+  <text x="1149" y="435" fill="#d5fff3" font-family="Arial,sans-serif" font-size="15" text-anchor="middle">CACHE</text>
+  <rect x="1228" y="398" width="110" height="62" rx="13" fill="#3c3048" stroke="#e2a8d1" stroke-opacity=".65"/>
+  <text x="1283" y="435" fill="#ffe4f6" font-family="Arial,sans-serif" font-size="15" text-anchor="middle">DATABASE</text>
+  <rect x="1094" y="506" width="244" height="116" rx="14" fill="#202a3c"/>
+  <text x="1118" y="544" fill="#9eaaca" font-family="Arial,sans-serif" font-size="15">BUILD STATUS</text>
+  <circle cx="1128" cy="579" r="8" fill="#69d6b7"/>
+  <text x="1148" y="585" fill="#e0e8f4" font-family="Arial,sans-serif" font-size="17">Ready to iterate</text>
+  <rect x="1118" y="598" width="194" height="6" rx="3" fill="url(#opensource-accent)" opacity=".8"/>
+  </g>
+</svg>

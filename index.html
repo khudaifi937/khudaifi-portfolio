@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khudaifi — Full-Stack Software Engineer & Creative Developer</title>
+  <meta name="description" content="Immersive 12-Section Developer Portfolio milik Khudaifi (29 Mei 2006) — Full-Stack Software Engineer & Creative Web Developer." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome & Devicon for Tech Logos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
+  <!-- Modular Styles -->
+  <link rel="stylesheet" href="css/style.css?v=12" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+  <!-- Custom Magnetic Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-outline" id="cursor-outline"></div>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+
+  <!-- Multi-Layered Interactive Animated Background -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="bg-grid-overlay"></div>
+  <div class="aurora-mesh">
+    <div class="aurora-orb orb-1"></div>
+    <div class="aurora-orb orb-2"></div>
+    <div class="aurora-orb orb-3"></div>
+  </div>
+  <div class="noise-overlay"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="loader-box">
+      <div class="loader-logo font-mono">&lt;Khudaifi<span class="text-cyan">/</span>&gt;</div>
+      <div class="loader-bar"><div class="loader-progress" id="loader-progress"></div></div>
+      <div class="loader-meta font-mono">
+        <span id="loader-status">Booting immersive environment...</span>
+        <span id="loader-percent">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Glass Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo magnetic">
+        <span class="logo-bracket">&lt;</span>Khudaifi<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#case-studies" class="nav-link">Case Studies</a>
+        <a href="#journey" class="nav-link">Journey</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#github" class="nav-link">GitHub</a>
+        <a href="#contact" class="nav-cta magnetic">Contact Me</a>
+      </nav>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         01. HERO / LANDING PAGE
+    ========================================================== -->
+    <section id="hero" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal-up">
+          <div class="availability-pill">
+            <span class="pulse-dot"></span>
+            <span>Open to Work &bull; Freelance & Full-Time Roles</span>
+          </div>
+
+          <p class="hero-kicker font-mono">01 // FULL-STACK SOFTWARE ENGINEER</p>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Khudaifi</span><span class="accent-dot">.</span>
+          </h1>
+          <h2 class="hero-tagline">
+            Building <span class="typing-text" id="typing-text"></span><span class="typing-cursor">|</span>
+          </h2>
+
+          <p class="hero-desc">
+            Programmer kelahiran <strong>29 Mei 2006</strong> yang merancang sistem web berarsitektur bersih, API berlatensi rendah, dan pengalaman antarmuka digital yang elegan serta penuh presisi.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary magnetic">
+              <span>View Projects</span>
+              <i class="fa-solid fa-arrow-down-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-glass magnetic">
+              <i class="fa-regular fa-paper-plane"></i>
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-val" data-target="24">0</span><span class="metric-plus">+</span>
+              <span class="metric-label">Projects Built</span>
+            </div>
+            <div class="metric-sep"></div>
+            <div class="metric-item">
+              <span class="metric-val" data-target="15">0</span><span class="metric-plus">+</span>
+              <span class="metric-label">Tech Stack</span>
+            </div>
+            <div class="metric-sep"></div>
+            <div class="metric-item">
+              <span class="metric-val" data-target="100">0</span><span class="metric-plus">%</span>
+              <span class="metric-label">Commitment</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D Interactive Visual / Photo Card -->
+        <div class="hero-visual reveal-up delay-200">
+          <div class="orbit-ring ring-1"></div>
+          <div class="orbit-ring ring-2"></div>
+
+          <div class="hero-card-3d" id="hero-tilt-card">
+            <div class="card-shine"></div>
+            <div class="hero-photo-frame">
+              <img src="assets/images/khudaifi-profile-hero.jpeg" alt="Khudaifi duduk sambil memandang suasana kota." class="hero-photo" />
+              <div class="photo-gradient"></div>
+            </div>
+            <div class="hero-card-info">
+              <div>
+                <span class="font-mono text-cyan text-xs">// DEVELOPER IDENTITY</span>
+                <h3>Khudaifi</h3>
+                <p>29 Mei 2006 &bull; Software Engineer</p>
+              </div>
+              <div class="hero-card-badges">
+                <span title="Clean Architecture"><i class="fa-solid fa-code"></i></span>
+                <span title="System Design"><i class="fa-solid fa-cubes"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="float-chip chip-1 font-mono">
+            <i class="devicon-react-original colored"></i> React / Next.js
+          </div>
+          <div class="float-chip chip-2 font-mono">
+            <i class="devicon-nodejs-plain colored"></i> Node.js / Go
+          </div>
+          <div class="float-chip chip-3 font-mono">
+            <i class="devicon-postgresql-plain colored"></i> PostgreSQL
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator">
+        <span class="font-mono">SCROLL</span>
+        <div class="scroll-line"></div>
+      </a>
+    </section>
+
+    <!-- =========================================================
+         02. ABOUT ME
+    ========================================================== -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="section-num font-mono">02. ABOUT ME</span>
+          <h2 class="section-title">Perjalanan, Spesialisasi & Filosofi Kode</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-photo-col reveal-up">
+            <div class="about-frame glass-panel">
+              <img src="assets/images/khudaifi-about.jpeg" alt="Khudaifi memotret pemandangan kota dan pegunungan dari ketinggian." />
+              <div class="about-caption font-mono">
+                <span class="status-dot"></span> khudaifi@dev — Born 29 May 2006
+              </div>
+            </div>
+          </div>
+
+          <div class="about-story-col reveal-up delay-150">
+            <div class="story-block">
+              <h3><i class="fa-solid fa-user-astronaut text-cyan"></i> Profil Singkat</h3>
+              <p>
+                Halo! Saya <strong>Khudaifi</strong>, seorang programmer kelahiran <strong>29 Mei 2006</strong> yang berfokus pada pengembangan aplikasi web modern secara end-to-end. Saya menggabungkan ketajaman logika rekayasa perangkat lunak dengan kepekaan estetika antarmuka.
+              </p>
+            </div>
+
+            <div class="story-block">
+              <h3><i class="fa-solid fa-route text-purple"></i> Perjalanan Belajar Programming</h3>
+              <p>
+                Ketertarikan saya bermula dari rasa penasaran tentang bagaimana sebuah baris kode mampu menggerakkan sistem digital yang digunakan ribuan orang. Dimulai dari algoritma dasar, HTML/CSS, dan JavaScript, saya terus memperdalam pengembangan backend, basis data relasional, hingga arsitektur cloud modern melalui pendekatan <em>project-based learning</em>.
+              </p>
+            </div>
+
+            <div class="story-pillars">
+              <div class="pillar-card glass-panel">
+                <span class="pillar-tag font-mono">MINAT & SPESIALISASI</span>
+                <h4>Full-Stack Web & API Architecture</h4>
+                <p>Membangun aplikasi web responsif, RESTful/WebSocket API aman, dan skema database efisien.</p>
+              </div>
+              <div class="pillar-card glass-panel">
+                <span class="pillar-tag font-mono">FILOSOFI TEKNOLOGI</span>
+                <h4>Clean, Scalable & Human-Centric</h4>
+                <p>Kode yang baik harus mudah dibaca oleh sesama developer dan terasa mulus bagi pengguna akhir.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         03. TECHNICAL SKILLS
+    ========================================================== -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="section-num font-mono">03. TECHNICAL SKILLS</span>
+          <h2 class="section-title">Kemampuan Teknis & Tingkat Penguasaan</h2>
+          <p class="section-sub">Klasifikasi teknologi berdasarkan spesialisasi dengan indikator tingkat penguasaan yang transparan.</p>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="skill-tabs reveal-up" id="skill-tabs">
+          <button class="skill-tab active" data-category="all">Semua Kategori</button>
+          <button class="skill-tab" data-category="languages">Programming Languages</button>
+          <button class="skill-tab" data-category="frontend">Frontend Dev</button>
+          <button class="skill-tab" data-category="backend">Backend Dev</button>
+          <button class="skill-tab" data-category="database">Database</button>
+          <button class="skill-tab" data-category="frameworks">Frameworks & Libraries</button>
+          <button class="skill-tab" data-category="tools">Tools & Environment</button>
+        </div>
+
+        <!-- Skills Grid (Rendered by js/data.js + js/main.js) -->
+        <div class="skills-matrix" id="skills-matrix"></div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         04. FEATURED PROJECTS
+    ========================================================== -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="section-num font-mono">04. FEATURED PROJECTS</span>
+          <h2 class="section-title">Proyek Pilihan & Eksplorasi UI</h2>
+          <p class="section-sub">Katalog Tani dan TRAYA adalah proyek yang kamu kirim. Kartu berlabel Demo Konsep merupakan eksplorasi UI, bukan aplikasi yang sudah live.</p>
+        </div>
+
+        <div class="project-filter-bar reveal-up">
+          <button class="filter-btn active" data-filter="all">Semua Proyek</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="mobile">Mobile UI</button>
+          <button class="filter-btn" data-filter="concept">Demo Konsep</button>
+        </div>
+
+        <div class="featured-projects-grid" id="featured-projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         05. PROJECT CASE STUDIES
+    ========================================================== -->
+    <section id="case-studies" class="case-studies section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="section-num font-mono">05. PROJECT CASE STUDIES</span>
+          <h2 class="section-title">Bedah Arsitektur & Proses Engineering</h2>
+          <p class="section-sub">Analisis mendalam mulai dari latar belakang masalah, peran, arsitektur sistem, hingga dampak hasil akhir.</p>
+        </div>
+
+        <div class="case-study-selector reveal-up" id="case-study-selector"></div>
+        <div class="case-study-viewer glass-panel reveal-up" id="case-study-viewer"></div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         06. EXPERIENCE & JOURNEY
+    ========================================================== -->
+    <section id="journey" class="journey section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="section-num font-mono">06. EXPERIENCE & JOURNEY</span>
+          <h2 class="section-title">Timeline Karier, Freelance & Organisasi</h2>
+        </div>
+
+        <div class="journey-timeline" id="journey-timeline"></div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         07. EDUCATION & CERTIFICATIONS
+    ========================================================== -->
+    <section id="education" class="education section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="section-num font-mono">07. EDUCATION & CERTIFICATIONS</span>
+          <h2 class="section-title">Pendidikan, Bootcamp, Sertifikasi & Prestasi</h2>
+        </div>
+
+        <div class="edu-cert-grid" id="edu-cert-grid"></div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         08. SERVICES
+    ========================================================== -->
+    <section id="services" class="services section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="section-num font-mono">08. SERVICES</span>
+          <h2 class="section-title">Layanan Pengembangan Perangkat Lunak</h2>
+          <p class="section-sub">Solusi teknis profesional untuk kebutuhan bisnis, startup, maupun proyek personal Anda.</p>
+        </div>
+
+        <div class="services-grid" id="services-grid"></div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         09. BEYOND CODING
+    ========================================================== -->
+    <section id="beyond" class="beyond section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="section-num font-mono">09. BEYOND CODING</span>
+          <h2 class="section-title">Sisi Personal, Eksplorasi & Prinsip Hidup</h2>
+        </div>
+
+        <div class="beyond-grid">
+          <div class="beyond-card glass-panel reveal-up">
+            <div class="beyond-icon"><i class="fa-solid fa-compass"></i></div>
+            <h3>Hobi & Ketertarikan</h3>
+            <p>Menikmati fotografi jalanan (<em>urban street photography</em>), eksplorasi desain antarmuka minimalis, membaca artikel arsitektur sistem, serta berdiskusi seputar perkembangan teknologi digital.</p>
+          </div>
+
+          <div class="beyond-card glass-panel reveal-up delay-100">
+            <div class="beyond-icon"><i class="fa-solid fa-microchip"></i></div>
+            <h3>Teknologi yang Sedang Dipelajari</h3>
+            <p>Saat ini sedang mendalami <strong>System Design berskala terdistribusi</strong>, <strong>Go (Golang) concurrency patterns</strong>, <strong>WebGL / Three.js</strong> untuk grafis 3D web, serta integrasi <strong>AI Agents</strong> ke dalam aplikasi produksi.</p>
+          </div>
+
+          <div class="beyond-card glass-panel reveal-up delay-150">
+            <div class="beyond-icon"><i class="fa-solid fa-flask"></i></div>
+            <h3>Aktivitas Eksplorasi</h3>
+            <p>Rutin membangun eksperimen <em>micro-interactions</em>, merancang komponen UI kustom, berkontribusi pada proyek <em>open-source</em>, dan menguji otomatisasi workflow server Linux.</p>
+          </div>
+
+          <div class="beyond-card glass-panel reveal-up delay-200">
+            <div class="beyond-icon"><i class="fa-solid fa-fire"></i></div>
+            <h3>Prinsip & Motivasi</h3>
+            <p><em>"Stay curious, build consistently, and solve real problems."</em> Setiap bug adalah peluang memahami sistem lebih dalam, dan setiap produk adalah cerminan kualitas pembuatnya.</p>
+          </div>
+
+          <figure class="beyond-photo glass-panel reveal-up">
+            <img src="assets/images/khudaifi-outdoors-night.jpeg" alt="Khudaifi duduk menikmati suasana malam dan pemandangan kota dari ketinggian." loading="lazy" />
+            <figcaption class="beyond-photo-caption">
+              <span class="font-mono">DI LUAR DUNIA KODE</span>
+              <strong>Mencari inspirasi, menjaga rasa ingin tahu.</strong>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         10. GITHUB & ACTIVITY
+    ========================================================== -->
+    <section id="github" class="github-section section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="section-num font-mono">10. GITHUB & ACTIVITY</span>
+          <h2 class="section-title">Aktivitas Open-Source & Statistik Kode</h2>
+          <p class="section-sub">Terintegrasi dengan GitHub Public API (masukkan username GitHub Anda di <code>js/github.js</code> untuk data real-time).</p>
+        </div>
+
+        <div class="github-dashboard glass-panel reveal-up">
+          <!-- Profile Header -->
+          <div class="gh-header">
+            <div class="gh-profile-info">
+              <img src="assets/images/khudaifi-profile.jpeg" alt="Foto profil Khudaifi" id="gh-avatar" class="gh-avatar" />
+              <div>
+                <h3 id="gh-name">Khudaifi (@khudaifi937)</h3>
+                <p id="gh-bio">Full-Stack Software Engineer &bull; Building clean web architectures & open-source tools.</p>
+              </div>
+            </div>
+            <a href="https://github.com/khudaifi937" target="_blank" rel="noopener" id="gh-profile-link" class="btn btn-glass magnetic">
+              <i class="fa-brands fa-github"></i>
+              <span>Visit GitHub Profile</span>
+            </a>
+          </div>
+
+          <!-- Stats Row -->
+          <div class="gh-stats-row">
+            <div class="gh-stat-box">
+              <span class="gh-stat-num" id="gh-repos-count">28</span>
+              <span class="gh-stat-lbl">Public Repositories</span>
+            </div>
+            <div class="gh-stat-box">
+              <span class="gh-stat-num" id="gh-commits-count">640+</span>
+              <span class="gh-stat-lbl">Yearly Contributions</span>
+            </div>
+            <div class="gh-stat-box">
+              <span class="gh-stat-num" id="gh-stars-count">45</span>
+              <span class="gh-stat-lbl">Total Stars Earned</span>
+            </div>
+            <div class="gh-stat-box">
+              <span class="gh-stat-num" id="gh-followers-count">120+</span>
+              <span class="gh-stat-lbl">Developer Network</span>
+            </div>
+          </div>
+
+          <!-- Contribution Heatmap Graph -->
+          <div class="gh-heatmap-wrapper">
+            <div class="gh-heatmap-head font-mono">
+              <span>Contribution Activity (Last 36 Weeks)</span>
+              <div class="heatmap-legend">
+                <span>Less</span>
+                <i class="lvl-0"></i><i class="lvl-1"></i><i class="lvl-2"></i><i class="lvl-3"></i><i class="lvl-4"></i>
+                <span>More</span>
+              </div>
+            </div>
+            <div class="gh-heatmap-grid" id="gh-heatmap-grid"></div>
+          </div>
+
+          <!-- Most Used Languages & Pinned Repos -->
+          <div class="gh-bottom-grid">
+            <div class="gh-langs">
+              <h4 class="font-mono">// Most Used Languages</h4>
+              <div class="lang-bar">
+                <span style="width: 38%; background: #3178c6;" title="TypeScript 38%"></span>
+                <span style="width: 27%; background: #f7df1e;" title="JavaScript 27%"></span>
+                <span style="width: 18%; background: #3776ab;" title="Python 18%"></span>
+                <span style="width: 17%; background: #00add8;" title="Go 17%"></span>
+              </div>
+              <div class="lang-legend font-mono">
+                <span><i style="background:#3178c6"></i> TypeScript 38%</span>
+                <span><i style="background:#f7df1e"></i> JavaScript 27%</span>
+                <span><i style="background:#3776ab"></i> Python 18%</span>
+                <span><i style="background:#00add8"></i> Go 17%</span>
+              </div>
+            </div>
+
+            <div class="gh-pinned" id="gh-pinned-repos"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         11. TESTIMONIALS
+    ========================================================== -->
+    <section id="testimonials" class="testimonials section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="section-num font-mono">11. TESTIMONIALS</span>
+          <h2 class="section-title">Ulasan Klien, Rekan Tim & Mentor</h2>
+          <p class="section-sub">Anda dapat memperbarui kutipan ini dengan testimoni nyata di <code>js/data.js</code>.</p>
+        </div>
+
+        <div class="testimonials-grid" id="testimonials-grid"></div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         12. CONTACT & FOOTER
+    ========================================================== -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="contact-wrapper glass-panel reveal-up">
+          <div class="contact-left">
+            <div class="availability-pill">
+              <span class="pulse-dot"></span>
+              <span>Status: Available for Freelance & Full-Time Roles</span>
+            </div>
+
+            <span class="section-num font-mono">12. CONTACT & COLLABORATION</span>
+            <h2>Mari Wujudkan Ide Digital Anda Bersama</h2>
+            <p>Tertarik berdiskusi mengenai pembuatan website, pengembangan sistem backend, atau peluang kolaborasi? Hubungi saya melalui kanal di bawah atau kirim pesan langsung.</p>
+
+            <!-- Download CV CTA -->
+            <div class="cv-action">
+              <a href="assets/docs/CV-Khudaifi.png" download="CV-Khudaifi.png" class="btn btn-primary magnetic">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                <span>Download CV</span>
+              </a>
+            </div>
+
+            <!-- Direct Social & Contact Links -->
+            <div class="contact-channels">
+              <a href="mailto:khudaifi937@gmail.com" class="channel-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <span class="font-mono">Email</span>
+                  <strong>khudaifi937@gmail.com</strong>
+                </div>
+              </a>
+              <a href="https://github.com/khudaifi937" target="_blank" rel="noopener" class="channel-item">
+                <i class="fa-brands fa-github"></i>
+                <div>
+                  <span class="font-mono">GitHub</span>
+                  <strong>github.com/khudaifi937</strong>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/flagship-web/in/khudaifi-rilif-844882451/" target="_blank" rel="noopener" class="channel-item">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <div>
+                  <span class="font-mono">LinkedIn</span>
+                  <strong>linkedin.com/in/khudaifi-rilif-844882451</strong>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/khdfiip_/" target="_blank" rel="noopener" class="channel-item">
+                <i class="fa-brands fa-instagram"></i>
+                <div>
+                  <span class="font-mono">Instagram</span>
+                  <strong>@khdfiip_</strong>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact-form" id="contact-form" action="#contact" method="post" data-whatsapp-number="6281775433550">
+            <h3 class="font-display">Kirim Pesan via WhatsApp</h3>
+            <div class="form-group">
+              <label for="sender-name" class="font-mono">Nama Lengkap</label>
+              <input type="text" id="sender-name" name="name" maxlength="100" required placeholder="Nama Anda / Perusahaan..." />
+            </div>
+            <div class="form-group">
+              <label for="sender-email" class="font-mono">Email Aktif</label>
+              <input type="email" id="sender-email" name="email" maxlength="254" required placeholder="nama@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="service-topic" class="font-mono">Topik / Layanan</label>
+              <select id="service-topic" name="topic" required>
+                <option value="Website Development">Website Development</option>
+                <option value="Frontend Development">Frontend Development</option>
+                <option value="Backend & API Development">Backend & API Development</option>
+                <option value="Database Architecture">Database Development</option>
+                <option value="Website Maintenance">Website Maintenance</option>
+                <option value="Job Opportunity / Collaboration">Job Opportunity / Collaboration</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="sender-message" class="font-mono">Detail Pesan</label>
+              <textarea id="sender-message" name="message" rows="4" maxlength="5000" required placeholder="Jelaskan kebutuhan proyek, estimasi waktu, atau pesan Anda..."></textarea>
+            </div>
+            <p class="form-help">Pesan akan disiapkan di WhatsApp. Tinjau isinya, lalu tekan Kirim.</p>
+            <button type="submit" class="btn btn-primary btn-full magnetic">
+              <span>Lanjutkan ke WhatsApp</span>
+              <i class="fa-brands fa-whatsapp"></i>
+            </button>
+            <p class="form-status font-mono" id="form-status" role="status" aria-live="polite"></p>
+            <noscript><p class="form-status is-error">Aktifkan JavaScript untuk menyiapkan pesan WhatsApp.</p></noscript>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#hero" class="brand-logo">
+          <span class="logo-bracket">&lt;</span>Khudaifi<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+        </a>
+        <p class="footer-tagline">Full-Stack Software Engineer &bull; Born 29 Mei 2006 &bull; Crafted with clean architecture & smooth motion.</p>
+      </div>
+
+      <div class="footer-nav font-mono">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#case-studies">Case Studies</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="mailto:khudaifi937@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/khudaifi937" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/flagship-web/in/khudaifi-rilif-844882451/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/khdfiip_/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="container footer-bottom font-mono">
+      <span>&copy; 2026 Khudaifi. All Rights Reserved.</span>
+      <a href="#hero" class="back-top">Back to Top <i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <!-- Modular JavaScript -->
+  <script src="js/data.js?v=11"></script>
+  <script src="js/canvas.js"></script>
+  <script src="js/github.js?v=2"></script>
+  <script src="js/main.js?v=9"></script>
+</body>
+</html>

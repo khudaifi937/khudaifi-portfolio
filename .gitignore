@@ -1,0 +1,27 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies and generated output
+vendor/
+node_modules/
+dist/
+build/
+coverage/
+
+# Runtime logs and local database files
+*.log
+error_log
+*.sqlite
+*.sqlite3
+*.db
+*.sql.gz
+*.bak
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <title>Ilustrasi ruang kerja proyek independen</title>
+  <desc>Dashboard proyek digital dengan panel analitik dan manajemen tugas.</desc>
+  <defs>
+    <linearGradient id="freelance-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#10212f"/>
+      <stop offset="1" stop-color="#173d45"/>
+    </linearGradient>
+    <linearGradient id="freelance-accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#54d6c1"/>
+      <stop offset="1" stop-color="#55aef4"/>
+    </linearGradient>
+    <pattern id="freelance-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#bcebe4" stroke-opacity=".055"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#freelance-bg)"/>
+  <rect width="1600" height="900" fill="url(#freelance-grid)"/>
+  <circle cx="1370" cy="180" r="240" fill="#55d6c1" opacity=".08"/>
+  <circle cx="170" cy="790" r="300" fill="#5088ff" opacity=".1"/>
+  <g transform="translate(0 67.5) scale(1 .85)">
+  <rect x="174" y="126" width="1252" height="648" rx="30" fill="#09131e" fill-opacity=".92" stroke="#d7f7f0" stroke-opacity=".18" stroke-width="2"/>
+  <path d="M174 190h1252" stroke="#d7f7f0" stroke-opacity=".12" stroke-width="2"/>
+  <circle cx="214" cy="158" r="8" fill="#ff7c84"/>
+  <circle cx="244" cy="158" r="8" fill="#ffc76c"/>
+  <circle cx="274" cy="158" r="8" fill="#66d8bd"/>
+  <text x="322" y="165" fill="#93aab6" font-family="Arial,sans-serif" font-size="18" letter-spacing="3">PROJECT WORKSPACE</text>
+  <rect x="210" y="220" width="238" height="500" rx="18" fill="#101e2b"/>
+  <rect x="235" y="252" width="42" height="42" rx="13" fill="url(#freelance-accent)"/>
+  <path d="M248 273h16m-8-8v16" stroke="#102a32" stroke-width="4" stroke-linecap="round"/>
+  <rect x="295" y="257" width="104" height="10" rx="5" fill="#dbeaf0" opacity=".8"/>
+  <rect x="295" y="276" width="72" height="7" rx="3.5" fill="#7a919e" opacity=".65"/>
+  <rect x="233" y="330" width="186" height="42" rx="12" fill="#1e3442"/>
+  <rect x="247" y="344" width="16" height="14" rx="4" fill="#5edbc5"/>
+  <rect x="276" y="347" width="105" height="8" rx="4" fill="#d9e7ec" opacity=".78"/>
+  <rect x="247" y="397" width="16" height="14" rx="4" fill="#607b8b"/>
+  <rect x="276" y="400" width="118" height="8" rx="4" fill="#93aab6" opacity=".55"/>
+  <rect x="247" y="448" width="16" height="14" rx="4" fill="#607b8b"/>
+  <rect x="276" y="451" width="94" height="8" rx="4" fill="#93aab6" opacity=".55"/>
+  <rect x="247" y="499" width="16" height="14" rx="4" fill="#607b8b"/>
+  <rect x="276" y="502" width="126" height="8" rx="4" fill="#93aab6" opacity=".55"/>
+  <rect x="247" y="550" width="16" height="14" rx="4" fill="#607b8b"/>
+  <rect x="276" y="553" width="83" height="8" rx="4" fill="#93aab6" opacity=".55"/>
+  <text x="492" y="263" fill="#eaf4f5" font-family="Arial,sans-serif" font-size="32" font-weight="700">Project overview</text>
+  <text x="492" y="296" fill="#91a8b4" font-family="Arial,sans-serif" font-size="18">A focused space for building useful digital products.</text>
+  <rect x="492" y="326" width="266" height="132" rx="18" fill="#142634" stroke="#c6ece7" stroke-opacity=".12"/>
+  <text x="518" y="365" fill="#91a8b4" font-family="Arial,sans-serif" font-size="17">ACTIVE PROJECT</text>
+  <text x="518" y="403" fill="#eaf4f5" font-family="Arial,sans-serif" font-size="24" font-weight="700">Operations dashboard</text>
+  <rect x="518" y="423" width="172" height="8" rx="4" fill="#2c4553"/>
+  <rect x="518" y="423" width="118" height="8" rx="4" fill="url(#freelance-accent)"/>
+  <rect x="782" y="326" width="266" height="132" rx="18" fill="#142634" stroke="#c6ece7" stroke-opacity=".12"/>
+  <text x="808" y="365" fill="#91a8b4" font-family="Arial,sans-serif" font-size="17">ANALYTICS</text>
+  <path d="M814 426l43-35 42 17 42-49 43 23 38-42" fill="none" stroke="#61ddc8" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+  <circle cx="856" cy="391" r="6" fill="#61ddc8"/>
+  <circle cx="941" cy="359" r="6" fill="#61ddc8"/>
+  <rect x="1072" y="326" width="310" height="132" rx="18" fill="#142634" stroke="#c6ece7" stroke-opacity=".12"/>
+  <text x="1098" y="365" fill="#91a8b4" font-family="Arial,sans-serif" font-size="17">DELIVERABLES</text>
+  <circle cx="1110" cy="399" r="8" fill="#61ddc8"/>
+  <path d="m1106 399 3 3 6-7" fill="none" stroke="#0c2530" stroke-width="2.5"/>
+  <rect x="1130" y="395" width="196" height="8" rx="4" fill="#c6d9df" opacity=".75"/>
+  <circle cx="1110" cy="431" r="8" fill="#61ddc8"/>
+  <path d="m1106 431 3 3 6-7" fill="none" stroke="#0c2530" stroke-width="2.5"/>
+  <rect x="1130" y="427" width="158" height="8" rx="4" fill="#c6d9df" opacity=".75"/>
+  <rect x="492" y="482" width="890" height="214" rx="18" fill="#111f2c" stroke="#c6ece7" stroke-opacity=".1"/>
+  <text x="520" y="520" fill="#eaf4f5" font-family="Arial,sans-serif" font-size="21" font-weight="700">From idea to delivery</text>
+  <path d="M554 592h756" stroke="#45606c" stroke-width="4"/>
+  <path d="M554 592h506" stroke="url(#freelance-accent)" stroke-width="4"/>
+  <g font-family="Arial,sans-serif" font-size="15" text-anchor="middle">
+    <circle cx="554" cy="592" r="14" fill="#55d6c1"/><text x="554" y="644" fill="#d9e8eb">Plan</text>
+    <circle cx="806" cy="592" r="14" fill="#55d6c1"/><text x="806" y="644" fill="#d9e8eb">Design</text>
+    <circle cx="1058" cy="592" r="14" fill="#4a7180"/><text x="1058" y="644" fill="#a2b3bb">Build</text>
+    <circle cx="1310" cy="592" r="14" fill="#4a7180"/><text x="1310" y="644" fill="#a2b3bb">Deliver</text>
+  </g>
+  </g>
+</svg>
