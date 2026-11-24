@@ -2,6 +2,10 @@
 
 Portofolio developer lengkap dengan 12 bagian terstruktur, latar belakang animasi multi-layer (*Aurora Mesh + Architectural Grid + Interactive Constellation Canvas*), dan kode terpisah per file agar mudah dikustomisasi di VS Code.
 
+## Live Portfolio
+
+Buka website portofolio: [https://khudaifi937.github.io/khudaifi-portfolio/](https://khudaifi937.github.io/khudaifi-portfolio/)
+
 ## Struktur Folder
 ```text
 khudaifi-portfolio-v2/
